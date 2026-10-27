@@ -21,7 +21,7 @@ function NavListItem({ navigation }: NavListItemProps) {
     const handleNavigateClick = (event: MouseEvent<HTMLLIElement>) => {
         event.stopPropagation();
         if (navigation.path) {
-            navigate(navigation.path, { replace: true });
+            navigate(navigation.path);
         }
         else {
             setOpenSubs(prev => !prev);

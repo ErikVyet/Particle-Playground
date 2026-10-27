@@ -22,8 +22,8 @@ export const NAVIGATIONS: INavigation[] = [
             },
             {
                 id: "nav-particles-2",
-                label: "Explosion Click",
-                path: "/particles/explosion-click"
+                label: "Cloud",
+                path: "/particles/cloud"
             }
         ]
     },

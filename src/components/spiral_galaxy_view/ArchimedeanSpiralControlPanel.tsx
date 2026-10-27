@@ -50,7 +50,6 @@ export default function ArchimedeanSpiralControlPanel() {
                     </Stack>
                     <CustomSlider value={axesSize} range={AXES_SIZE_RANGE} step={1} label={"Axes Size"} disabled={!axesHelper} onChange={handleAxesSizeChange}/>
                     <CustomSlider value={gridSize} range={GRID_SIZE_RANGE} step={1} label={"Grid Size"} disabled={!gridHelper} onChange={handleGridSizeChange}/>
-
                 </Stack>
             </Popover>
         </>

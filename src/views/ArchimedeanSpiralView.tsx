@@ -31,8 +31,8 @@ export default function ArchimedeanSpiralView() {
     return (
         <ArchimedeanSpiralContext.Provider value={{ axesHelper, setAxesHelper, axesSize, setAxesSize, gridHelper, setGridHelper, gridSize, setGridSize, points, setPoints, size, setSize, curves, setCurves, curveSpread, setCurveSpread, spreadX, setSpreadX, spreadZ, setSpreadZ, rotate, setRotate }}>
             <Stack className="pb-6 justify-center">
-                <Typography className={`pb-4 ${FONT_FAMILY} ${PRIMARY_TEXT_COLOR} lg:text-2xl! xl: text-3xl! font-semibold! place-self-center`}>Spiral Galaxy</Typography>
-                <Typography className={`${FONT_FAMILY} ${PRIMARY_TEXT_COLOR} overflow-hidden text-ellipsis`}>{ARCHIMEDEAN_SPIRAL_INTRODUCTION}</Typography>
+                <Typography className={`pb-4 ${FONT_FAMILY} ${PRIMARY_TEXT_COLOR} lg:text-2xl! xl:text-3xl! font-semibold! place-self-center`}>Archimedean Spiral</Typography>
+                <Typography className={`${FONT_FAMILY} ${PRIMARY_TEXT_COLOR} overflow-hidden text-ellipsis xl:text-xl!`}>{ARCHIMEDEAN_SPIRAL_INTRODUCTION}</Typography>
                 
             </Stack>
             <Box className="relative size-full">
