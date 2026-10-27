@@ -1,0 +1,3 @@
+
+/* Spiral Galaxy */
+export const ARCHIMEDEAN_SPIRAL_INTRODUCTION = "This interactive simulation brings classic mathematics to life by translating the polar equation of the Archimedean spiral (r = a + b * theta) into dynamic 3D geometry using Three.js. By mapping parametric curve coordinates into real-time vertex buffers, it creates a mesmerizing visual experience that seamlessly bridges theoretical geometry with modern web graphics.";
