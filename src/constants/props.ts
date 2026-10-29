@@ -1,6 +1,8 @@
-import type { CheckboxProps, OutlinedInputProps, PopoverProps, SliderProps } from "@mui/material";
+import type { AlertProps, CheckboxProps, OutlinedInputProps, PopoverProps, SliderProps, SnackbarProps } from "@mui/material";
 import { FONT_FAMILY, PRIMARY_TEXT_COLOR } from "./style";
 import { blue, grey } from "@mui/material/colors";
+import type { RigidBodyProps } from "@react-three/rapier";
+import { ActiveCollisionTypes } from "@dimforge/rapier3d-compat";
 
 export const OUTLINED_INPUT_COMMON_PROPS: OutlinedInputProps = {
     size: "small",
@@ -56,4 +58,22 @@ export const CHECKBOX_COMMON_PROPS: CheckboxProps = {
             color: blue[700]
         }
     }
+};
+
+export const SNACKBAR_COMMON_PROPS: SnackbarProps = {
+    autoHideDuration: 3000,
+    anchorOrigin: { horizontal: "right", vertical: "bottom" },
+    onClick: (event) => { event.stopPropagation(); event.preventDefault(); }
+};
+
+export const ALERT_COMMON_PROPS: AlertProps = {
+    variant: "filled"
+};
+
+/* --------------------------------------------------------------------------------------------- */
+export const DICE_RIGID_BODY_COMMON_RPOPS: RigidBodyProps = {
+    type: "dynamic",
+    colliders: "cuboid",
+    activeCollisionTypes: ActiveCollisionTypes.ALL,
+    ccd: true
 };

@@ -20,11 +20,11 @@ export const NAVIGATIONS: INavigation[] = [
                 label: "Archimedean Spiral",
                 path: "/particles/archimedean-spiral"
             },
-            {
-                id: "nav-particles-2",
-                label: "Cloud",
-                path: "/particles/cloud"
-            }
+            // {
+            //     id: "nav-particles-2",
+            //     label: "Cloud",
+            //     path: "/particles/cloud"
+            // }
         ]
     },
     {
@@ -35,6 +35,11 @@ export const NAVIGATIONS: INavigation[] = [
                 id: "nav-others-1",
                 label: "Dashboard",
                 path: "/others/dashboard"
+            },
+            {
+                id: "nav-others-2",
+                label: "Dices",
+                path: "/others/dices"
             }
         ]
     }

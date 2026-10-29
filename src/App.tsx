@@ -3,6 +3,7 @@ import MainLayout from './layouts/MainLayout';
 import IntroductionView from './views/IntroductionView';
 import ArchimedeanSpiralView from './views/ArchimedeanSpiralView';
 import DashBoardView from './views/DashboardView';
+import DiceView from './views/DiceView';
 
 export default function App() {
     const browserRouter = createBrowserRouter(
@@ -15,6 +16,7 @@ export default function App() {
                     </Route>
                     <Route path={"others"}>
                         <Route path={"dashboard"} element={<DashBoardView/>}/>
+                        <Route path={"dices"} element={<DiceView/>}/>
                     </Route>
                 </Route>
             </Route>

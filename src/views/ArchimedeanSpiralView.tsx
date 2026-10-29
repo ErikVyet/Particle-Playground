@@ -1,14 +1,14 @@
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Bloom, EffectComposer } from "@react-three/postprocessing";
-import SpiralGalaxyScene from "../components/spiral_galaxy_view/ArchimedeanSpiralScene";
+import SpiralGalaxyScene from "../components/archimedean_spiral_view/ArchimedeanSpiralScene";
 import { useMemo, useState } from "react";
 import { INITIAL_AXES_SIZE, INITIAL_GRID_SIZE, INITIAL_POINTS, INITIAL_POINT_SIZE, INITIAL_POINT_SPREAD_X, INITIAL_POINT_SPREAD_Z, INITIAL_CURVES, INITIAL_CURVE_SPREAD } from "../constants/scene";
 import { ArchimedeanSpiralContext } from "../contexts/ArchimedeanSpiralContext";
 import { LineBasicMaterial } from "three";
 import { grey } from "@mui/material/colors";
 import { Box, Stack, Typography } from "@mui/material";
-import SpiralGalaxyControlPanel from "../components/spiral_galaxy_view/ArchimedeanSpiralControlPanel";
+import SpiralGalaxyControlPanel from "../components/archimedean_spiral_view/ArchimedeanSpiralControlPanel";
 import CustomAxesHelper from "../components/common/CustomAxesHelper";
 import { FONT_FAMILY, PRIMARY_TEXT_COLOR } from "../constants/style";
 import { ARCHIMEDEAN_SPIRAL_INTRODUCTION } from "../constants/paragraphs";
